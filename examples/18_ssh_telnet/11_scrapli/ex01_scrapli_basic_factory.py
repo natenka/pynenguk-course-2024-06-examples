@@ -2,19 +2,14 @@ from scrapli import Scrapli
 from scrapli.exceptions import ScrapliException, ScrapliAuthenticationFailed
 import yaml
 
+
 def send_show(device, show_command):
     try:
         with Scrapli(**device) as ssh:
             reply = ssh.send_command(show_command)
             return reply.result
     except ScrapliAuthenticationFailed as error:
-        error_str = str(error).lower()
-        if "no route to host" in error_str:
-            print(error)
-        elif "no matching key exchange" in error_str:
-            print(error)
-        else:
-            print(error, device["host"])
+        print(error)
 
 
 def send_cfg(device, cfg_commands):
