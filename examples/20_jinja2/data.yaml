@@ -1,0 +1,8 @@
+- hostname: Ivanov
+  ip: 10.45.130.77
+  switch_name: xCentral
+  type: phone
+- hostname: Halushko
+  ip: 10.45.30.77
+  switch_name: xCentral
+  type: pc

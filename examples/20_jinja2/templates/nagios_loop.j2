@@ -1,0 +1,10 @@
+{% for dev in all_devices %}
+define host {
+    use                     generic-pc
+    host_name   {{dev.hostname}}_{{dev.ip}}
+    alias                   {{dev.type}}
+    address     {{dev['ip']}}
+    hostgroups  _{{dev.switch_name}}, {{dev.type}}
+    parents     {{dev.switch_name}}
+}
+{% endfor %}

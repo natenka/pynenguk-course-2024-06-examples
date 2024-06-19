@@ -14,6 +14,3 @@ to_yaml = {
              'switchport trunk allowed vlan'],
 }
 
-with open("yaml_files/result_15.yaml", "w") as f:
-    yaml.dump(to_yaml, f, default_flow_style=False, explicit_start=True)
-

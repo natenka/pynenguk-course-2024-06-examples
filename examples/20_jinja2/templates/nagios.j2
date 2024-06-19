@@ -1,0 +1,8 @@
+define host {
+    use                     generic-pc
+    host_name   {{hostname}}_{{ip}}
+    alias                   {{type}}
+    address     {{ip}}
+    hostgroups  _{{switch_name}}, {{type}}
+    parents     {{switch_name}}
+}
