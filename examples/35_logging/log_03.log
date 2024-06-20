@@ -1,0 +1,458 @@
+2024-06-20 13:38:04,415 Jason INFO                 27 <module> MSG INFO
+2024-06-20 13:38:29,074 __main__ INFO                 27 <module> MSG INFO
+2024-06-20 13:39:26,676 __main__ INFO                 30 send_show_netmiko ===> Connection: 192.168.139.1
+2024-06-20 13:39:27,630 __main__ DEBUG                35 send_show_netmiko 
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+2024-06-20 13:39:27,630 __main__ INFO                 36 send_show_netmiko <=== Received:   192.168.139.1
+2024-06-20 13:40:21,271 __main__ INFO       30 send_show_netmiko ===> Connection: 192.168.139.1
+2024-06-20 13:40:22,163 __main__ DEBUG      35 send_show_netmiko 
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+2024-06-20 13:40:22,163 __main__ INFO       36 send_show_netmiko <=== Received:   192.168.139.1
+2024-06-20 13:40:55,936 root INFO       30 send_show_netmiko ===> Connection: 192.168.139.1
+2024-06-20 13:40:55,951 paramiko.transport DEBUG      1874 _log starting thread (client mode): 0xf915f4d0
+2024-06-20 13:40:55,951 paramiko.transport DEBUG      1874 _log Local version/idstring: SSH-2.0-paramiko_2.12.0
+2024-06-20 13:40:55,962 paramiko.transport DEBUG      1874 _log Remote version/idstring: SSH-2.0-Cisco-1.25
+2024-06-20 13:40:55,962 paramiko.transport INFO       1874 _log Connected (version 2.0, client Cisco-1.25)
+2024-06-20 13:40:55,972 paramiko.transport DEBUG      1874 _log === Key exchange possibilities ===
+2024-06-20 13:40:55,972 paramiko.transport DEBUG      1874 _log kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1
+2024-06-20 13:40:55,972 paramiko.transport DEBUG      1874 _log server key: ssh-rsa
+2024-06-20 13:40:55,972 paramiko.transport DEBUG      1874 _log client encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+2024-06-20 13:40:55,973 paramiko.transport DEBUG      1874 _log server encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+2024-06-20 13:40:55,973 paramiko.transport DEBUG      1874 _log client mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+2024-06-20 13:40:55,973 paramiko.transport DEBUG      1874 _log server mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+2024-06-20 13:40:55,973 paramiko.transport DEBUG      1874 _log client compress: none
+2024-06-20 13:40:55,973 paramiko.transport DEBUG      1874 _log server compress: none
+2024-06-20 13:40:55,973 paramiko.transport DEBUG      1874 _log client lang: <none>
+2024-06-20 13:40:55,973 paramiko.transport DEBUG      1874 _log server lang: <none>
+2024-06-20 13:40:55,974 paramiko.transport DEBUG      1874 _log kex follows: False
+2024-06-20 13:40:55,974 paramiko.transport DEBUG      1874 _log === Key exchange agreements ===
+2024-06-20 13:40:55,974 paramiko.transport DEBUG      1874 _log Kex: diffie-hellman-group-exchange-sha1
+2024-06-20 13:40:55,974 paramiko.transport DEBUG      1874 _log HostKey: ssh-rsa
+2024-06-20 13:40:55,974 paramiko.transport DEBUG      1874 _log Cipher: aes128-cbc
+2024-06-20 13:40:55,974 paramiko.transport DEBUG      1874 _log MAC: hmac-sha1
+2024-06-20 13:40:55,975 paramiko.transport DEBUG      1874 _log Compression: none
+2024-06-20 13:40:55,975 paramiko.transport DEBUG      1874 _log === End of kex handshake ===
+2024-06-20 13:40:55,982 paramiko.transport DEBUG      1874 _log Got server p (2048 bits)
+2024-06-20 13:40:56,132 paramiko.transport DEBUG      1874 _log kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2024-06-20 13:40:56,133 paramiko.transport DEBUG      1874 _log Switch to new keys ...
+2024-06-20 13:40:56,134 paramiko.transport DEBUG      1874 _log Adding ssh-rsa host key for 192.168.139.1: b'1e39b628dafad10d88e493e52bdacca8'
+2024-06-20 13:40:56,373 paramiko.transport DEBUG      1874 _log userauth is OK
+2024-06-20 13:40:56,393 paramiko.transport INFO       1874 _log Authentication (password) successful!
+2024-06-20 13:40:56,394 paramiko.transport DEBUG      1212 _log [chan 0] Max packet in: 32768 bytes
+2024-06-20 13:40:56,404 paramiko.transport DEBUG      1212 _log [chan 0] Max packet out: 4096 bytes
+2024-06-20 13:40:56,404 paramiko.transport DEBUG      1874 _log Secsh channel 0 opened.
+2024-06-20 13:40:56,415 paramiko.transport DEBUG      1212 _log [chan 0] Sesch channel 0 request ok
+2024-06-20 13:40:56,425 paramiko.transport DEBUG      1212 _log [chan 0] Sesch channel 0 request ok
+2024-06-20 13:40:56,426 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:40:56,527 netmiko DEBUG      113 wrapper_decorator write_channel: b'terminal width 511\n'
+2024-06-20 13:40:56,528 netmiko DEBUG      583 read_channel read_channel: R1>
+R1>
+2024-06-20 13:40:56,539 netmiko DEBUG      583 read_channel read_channel: t
+2024-06-20 13:40:56,550 netmiko DEBUG      583 read_channel read_channel: erminal width 51
+2024-06-20 13:40:56,561 netmiko DEBUG      583 read_channel read_channel: 1
+R1>
+2024-06-20 13:40:56,562 netmiko DEBUG      660 read_until_pattern Pattern found: (terminal width 511) R1>
+R1>terminal width 511
+2024-06-20 13:40:56,562 netmiko DEBUG      1216 disable_paging In disable_paging
+2024-06-20 13:40:56,562 netmiko DEBUG      1217 disable_paging Command: terminal length 0
+
+2024-06-20 13:40:56,562 netmiko DEBUG      113 wrapper_decorator write_channel: b'terminal length 0\n'
+2024-06-20 13:40:56,563 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,573 netmiko DEBUG      583 read_channel read_channel: terminal length 
+2024-06-20 13:40:56,584 netmiko DEBUG      583 read_channel read_channel: 0
+R1>
+2024-06-20 13:40:56,584 netmiko DEBUG      660 read_until_pattern Pattern found: (terminal\ length\ 0) 
+R1>terminal length 0
+2024-06-20 13:40:56,584 netmiko DEBUG      1228 disable_paging 
+R1>terminal length 0
+2024-06-20 13:40:56,585 netmiko DEBUG      1229 disable_paging Exiting disable_paging
+2024-06-20 13:40:56,602 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,604 netmiko DEBUG      1387 clear_buffer Clear buffer detects data in the channel
+2024-06-20 13:40:56,625 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,626 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:40:56,626 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,637 netmiko DEBUG      583 read_channel read_channel: 
+R1>
+2024-06-20 13:40:56,637 netmiko DEBUG      660 read_until_pattern Pattern found: (\#|>) 
+R1>
+2024-06-20 13:40:56,648 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,648 netmiko DEBUG      1363 find_prompt [find_prompt()]: prompt is R1>
+2024-06-20 13:40:56,649 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:40:56,649 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,660 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,676 netmiko DEBUG      583 read_channel read_channel: 
+R1>
+2024-06-20 13:40:56,676 netmiko DEBUG      660 read_until_pattern Pattern found: (R1.*) 
+R1>
+2024-06-20 13:40:56,677 netmiko DEBUG      113 wrapper_decorator write_channel: b'enable\n'
+2024-06-20 13:40:56,677 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,687 netmiko DEBUG      583 read_channel read_channel: enable
+
+2024-06-20 13:40:56,687 netmiko DEBUG      660 read_until_pattern Pattern found: (enable) enable
+2024-06-20 13:40:56,688 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,699 netmiko DEBUG      583 read_channel read_channel: Password: 
+2024-06-20 13:40:56,699 netmiko DEBUG      660 read_until_pattern Pattern found: ((?:R1|ssword)) 
+Password
+2024-06-20 13:40:56,699 netmiko DEBUG      113 wrapper_decorator write_channel: b'********\n'
+2024-06-20 13:40:56,700 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,710 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,721 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:40:56,721 netmiko DEBUG      660 read_until_pattern Pattern found: (R1) : 
+R1
+2024-06-20 13:40:56,721 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:40:56,722 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,734 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:40:56,734 netmiko DEBUG      660 read_until_pattern Pattern found: (R1.*) #
+R1#
+2024-06-20 13:40:56,749 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,749 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:40:56,783 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:40:56,794 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,795 netmiko DEBUG      1363 find_prompt [find_prompt()]: prompt is R1#
+2024-06-20 13:40:56,795 netmiko DEBUG      113 wrapper_decorator write_channel: b'sh ip int br\n'
+2024-06-20 13:40:56,795 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,806 netmiko DEBUG      583 read_channel read_channel: sh ip int 
+2024-06-20 13:40:56,820 netmiko DEBUG      583 read_channel read_channel: br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+R1#
+2024-06-20 13:40:56,821 netmiko DEBUG      660 read_until_pattern Pattern found: (sh\ ip\ int\ br) sh ip int br
+2024-06-20 13:40:56,846 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,846 root DEBUG      35 send_show_netmiko 
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+2024-06-20 13:40:56,846 root INFO       36 send_show_netmiko <=== Received:   192.168.139.1
+2024-06-20 13:40:56,847 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:40:56,847 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,858 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:40:56,871 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:40:56,871 netmiko DEBUG      660 read_until_pattern Pattern found: ([>#]) 
+R1#
+2024-06-20 13:40:56,872 netmiko DEBUG      113 wrapper_decorator write_channel: b'exit\n'
+2024-06-20 13:42:19,926 __main__ INFO       30 send_show_netmiko ===> Connection: 192.168.139.11
+2024-06-20 13:42:23,003 __main__ ERROR      40 send_show_netmiko ERROR
+Traceback (most recent call last):
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/paramiko/client.py", line 381, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.139.11
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vagrant/repos/uk/pynenguk-course-2024-06-examples/examples/35_logging/muk_ex03.py", line 33, in send_show_netmiko
+    with Netmiko(**device_dict) as ssh:
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 1068, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.139.11:22
+
+
+2024-06-20 13:42:43,207 __main__ INFO       30 send_show_netmiko ===> Connection: 192.168.139.11
+2024-06-20 13:42:46,267 __main__ ERROR      40 send_show_netmiko ERROR
+Traceback (most recent call last):
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 1046, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/paramiko/client.py", line 381, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.139.11
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vagrant/repos/uk/pynenguk-course-2024-06-examples/examples/35_logging/muk_ex03.py", line 33, in send_show_netmiko
+    with Netmiko(**device_dict) as ssh:
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 365, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 439, in __init__
+    self._open()
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 444, in _open
+    self.establish_connection()
+  File "/home/vagrant/venv/pyneng311/lib/python3.11/site-packages/netmiko/base_connection.py", line 1068, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.139.11:22
+
+
+2024-06-20 13:49:36,245 root INFO       28 send_show_netmiko ===> Connection: 192.168.139.1
+2024-06-20 13:49:36,269 paramiko.transport DEBUG      1874 _log starting thread (client mode): 0x282ce4d0
+2024-06-20 13:49:36,269 paramiko.transport DEBUG      1874 _log Local version/idstring: SSH-2.0-paramiko_2.12.0
+2024-06-20 13:49:36,279 paramiko.transport DEBUG      1874 _log Remote version/idstring: SSH-2.0-Cisco-1.25
+2024-06-20 13:49:36,279 paramiko.transport INFO       1874 _log Connected (version 2.0, client Cisco-1.25)
+2024-06-20 13:49:36,289 paramiko.transport DEBUG      1874 _log === Key exchange possibilities ===
+2024-06-20 13:49:36,290 paramiko.transport DEBUG      1874 _log kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1
+2024-06-20 13:49:36,290 paramiko.transport DEBUG      1874 _log server key: ssh-rsa
+2024-06-20 13:49:36,290 paramiko.transport DEBUG      1874 _log client encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+2024-06-20 13:49:36,290 paramiko.transport DEBUG      1874 _log server encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+2024-06-20 13:49:36,290 paramiko.transport DEBUG      1874 _log client mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+2024-06-20 13:49:36,290 paramiko.transport DEBUG      1874 _log server mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+2024-06-20 13:49:36,291 paramiko.transport DEBUG      1874 _log client compress: none
+2024-06-20 13:49:36,291 paramiko.transport DEBUG      1874 _log server compress: none
+2024-06-20 13:49:36,291 paramiko.transport DEBUG      1874 _log client lang: <none>
+2024-06-20 13:49:36,291 paramiko.transport DEBUG      1874 _log server lang: <none>
+2024-06-20 13:49:36,291 paramiko.transport DEBUG      1874 _log kex follows: False
+2024-06-20 13:49:36,291 paramiko.transport DEBUG      1874 _log === Key exchange agreements ===
+2024-06-20 13:49:36,292 paramiko.transport DEBUG      1874 _log Kex: diffie-hellman-group-exchange-sha1
+2024-06-20 13:49:36,292 paramiko.transport DEBUG      1874 _log HostKey: ssh-rsa
+2024-06-20 13:49:36,292 paramiko.transport DEBUG      1874 _log Cipher: aes128-cbc
+2024-06-20 13:49:36,292 paramiko.transport DEBUG      1874 _log MAC: hmac-sha1
+2024-06-20 13:49:36,292 paramiko.transport DEBUG      1874 _log Compression: none
+2024-06-20 13:49:36,292 paramiko.transport DEBUG      1874 _log === End of kex handshake ===
+2024-06-20 13:49:36,299 paramiko.transport DEBUG      1874 _log Got server p (2048 bits)
+2024-06-20 13:49:36,450 paramiko.transport DEBUG      1874 _log kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2024-06-20 13:49:36,451 paramiko.transport DEBUG      1874 _log Switch to new keys ...
+2024-06-20 13:49:36,452 paramiko.transport DEBUG      1874 _log Adding ssh-rsa host key for 192.168.139.1: b'1e39b628dafad10d88e493e52bdacca8'
+2024-06-20 13:49:36,688 paramiko.transport DEBUG      1874 _log userauth is OK
+2024-06-20 13:49:36,718 paramiko.transport INFO       1874 _log Authentication (password) successful!
+2024-06-20 13:49:36,719 paramiko.transport DEBUG      1212 _log [chan 0] Max packet in: 32768 bytes
+2024-06-20 13:49:36,729 paramiko.transport DEBUG      1212 _log [chan 0] Max packet out: 4096 bytes
+2024-06-20 13:49:36,729 paramiko.transport DEBUG      1874 _log Secsh channel 0 opened.
+2024-06-20 13:49:36,739 paramiko.transport DEBUG      1212 _log [chan 0] Sesch channel 0 request ok
+2024-06-20 13:49:36,750 paramiko.transport DEBUG      1212 _log [chan 0] Sesch channel 0 request ok
+2024-06-20 13:49:36,751 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:36,853 netmiko DEBUG      113 wrapper_decorator write_channel: b'terminal width 511\n'
+2024-06-20 13:49:36,854 netmiko DEBUG      583 read_channel read_channel: R1>
+R1>
+2024-06-20 13:49:36,866 netmiko DEBUG      583 read_channel read_channel: termin
+2024-06-20 13:49:36,877 netmiko DEBUG      583 read_channel read_channel: al width 511
+
+2024-06-20 13:49:36,877 netmiko DEBUG      660 read_until_pattern Pattern found: (terminal width 511) R1>
+R1>terminal width 511
+2024-06-20 13:49:36,878 netmiko DEBUG      1216 disable_paging In disable_paging
+2024-06-20 13:49:36,879 netmiko DEBUG      1217 disable_paging Command: terminal length 0
+
+2024-06-20 13:49:36,879 netmiko DEBUG      113 wrapper_decorator write_channel: b'terminal length 0\n'
+2024-06-20 13:49:36,880 netmiko DEBUG      583 read_channel read_channel: R1>
+2024-06-20 13:49:36,891 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:36,902 netmiko DEBUG      583 read_channel read_channel: terminal length 
+2024-06-20 13:49:36,913 netmiko DEBUG      583 read_channel read_channel: 0
+R1>
+2024-06-20 13:49:36,914 netmiko DEBUG      660 read_until_pattern Pattern found: (terminal\ length\ 0) 
+R1>terminal length 0
+2024-06-20 13:49:36,914 netmiko DEBUG      1228 disable_paging 
+R1>terminal length 0
+2024-06-20 13:49:36,915 netmiko DEBUG      1229 disable_paging Exiting disable_paging
+2024-06-20 13:49:36,926 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:36,928 netmiko DEBUG      1387 clear_buffer Clear buffer detects data in the channel
+2024-06-20 13:49:36,949 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:36,950 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:36,950 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:36,963 netmiko DEBUG      583 read_channel read_channel: 
+
+2024-06-20 13:49:36,974 netmiko DEBUG      583 read_channel read_channel: R1>
+2024-06-20 13:49:36,975 netmiko DEBUG      660 read_until_pattern Pattern found: (\#|>) 
+R1>
+2024-06-20 13:49:36,985 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:36,986 netmiko DEBUG      1363 find_prompt [find_prompt()]: prompt is R1>
+2024-06-20 13:49:36,987 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:36,987 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:36,999 netmiko DEBUG      583 read_channel read_channel: 
+R1>
+2024-06-20 13:49:37,000 netmiko DEBUG      660 read_until_pattern Pattern found: (R1.*) 
+R1>
+2024-06-20 13:49:37,001 netmiko DEBUG      113 wrapper_decorator write_channel: b'enable\n'
+2024-06-20 13:49:37,001 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,013 netmiko DEBUG      583 read_channel read_channel: enable
+
+2024-06-20 13:49:37,014 netmiko DEBUG      660 read_until_pattern Pattern found: (enable) enable
+2024-06-20 13:49:37,014 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,025 netmiko DEBUG      583 read_channel read_channel: Password: 
+2024-06-20 13:49:37,026 netmiko DEBUG      660 read_until_pattern Pattern found: ((?:R1|ssword)) 
+Password
+2024-06-20 13:49:37,026 netmiko DEBUG      113 wrapper_decorator write_channel: b'********\n'
+2024-06-20 13:49:37,027 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,037 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,048 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,059 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,070 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:37,071 netmiko DEBUG      660 read_until_pattern Pattern found: (R1) : 
+R1
+2024-06-20 13:49:37,072 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:37,073 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,086 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:37,086 netmiko DEBUG      660 read_until_pattern Pattern found: (R1.*) #
+R1#
+2024-06-20 13:49:37,097 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,098 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:37,125 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:37,136 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,137 netmiko DEBUG      1363 find_prompt [find_prompt()]: prompt is R1#
+2024-06-20 13:49:37,138 netmiko DEBUG      113 wrapper_decorator write_channel: b'sh ip int br\n'
+2024-06-20 13:49:37,139 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,150 netmiko DEBUG      583 read_channel read_channel: sh ip int br
+
+2024-06-20 13:49:37,151 netmiko DEBUG      660 read_until_pattern Pattern found: (sh\ ip\ int\ br) sh ip int br
+2024-06-20 13:49:37,177 netmiko DEBUG      583 read_channel read_channel: Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+R1#
+2024-06-20 13:49:37,177 root DEBUG      34 send_show_netmiko 
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+2024-06-20 13:49:37,178 root INFO       35 send_show_netmiko <=== Received:   192.168.139.1
+2024-06-20 13:49:37,179 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:37,179 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:37,190 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:37,191 netmiko DEBUG      660 read_until_pattern Pattern found: ([>#]) 
+R1#
+2024-06-20 13:49:37,191 netmiko DEBUG      113 wrapper_decorator write_channel: b'exit\n'
+2024-06-20 13:49:40,641 root INFO       28 send_show_netmiko ===> Connection: 192.168.139.1
+2024-06-20 13:49:40,656 paramiko.transport DEBUG      1874 _log starting thread (client mode): 0x47a3bc10
+2024-06-20 13:49:40,657 paramiko.transport DEBUG      1874 _log Local version/idstring: SSH-2.0-paramiko_2.12.0
+2024-06-20 13:49:40,667 paramiko.transport DEBUG      1874 _log Remote version/idstring: SSH-2.0-Cisco-1.25
+2024-06-20 13:49:40,667 paramiko.transport INFO       1874 _log Connected (version 2.0, client Cisco-1.25)
+2024-06-20 13:49:40,679 paramiko.transport DEBUG      1874 _log === Key exchange possibilities ===
+2024-06-20 13:49:40,679 paramiko.transport DEBUG      1874 _log kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1
+2024-06-20 13:49:40,679 paramiko.transport DEBUG      1874 _log server key: ssh-rsa
+2024-06-20 13:49:40,679 paramiko.transport DEBUG      1874 _log client encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+2024-06-20 13:49:40,679 paramiko.transport DEBUG      1874 _log server encrypt: aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log client mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log server mac: hmac-sha1, hmac-sha1-96, hmac-md5, hmac-md5-96
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log client compress: none
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log server compress: none
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log client lang: <none>
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log server lang: <none>
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log kex follows: False
+2024-06-20 13:49:40,680 paramiko.transport DEBUG      1874 _log === Key exchange agreements ===
+2024-06-20 13:49:40,681 paramiko.transport DEBUG      1874 _log Kex: diffie-hellman-group-exchange-sha1
+2024-06-20 13:49:40,681 paramiko.transport DEBUG      1874 _log HostKey: ssh-rsa
+2024-06-20 13:49:40,681 paramiko.transport DEBUG      1874 _log Cipher: aes128-cbc
+2024-06-20 13:49:40,681 paramiko.transport DEBUG      1874 _log MAC: hmac-sha1
+2024-06-20 13:49:40,681 paramiko.transport DEBUG      1874 _log Compression: none
+2024-06-20 13:49:40,681 paramiko.transport DEBUG      1874 _log === End of kex handshake ===
+2024-06-20 13:49:40,690 paramiko.transport DEBUG      1874 _log Got server p (2048 bits)
+2024-06-20 13:49:40,847 paramiko.transport DEBUG      1874 _log kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2024-06-20 13:49:40,848 paramiko.transport DEBUG      1874 _log Switch to new keys ...
+2024-06-20 13:49:40,848 paramiko.transport DEBUG      1874 _log Adding ssh-rsa host key for 192.168.139.1: b'1e39b628dafad10d88e493e52bdacca8'
+2024-06-20 13:49:41,083 paramiko.transport DEBUG      1874 _log userauth is OK
+2024-06-20 13:49:41,095 paramiko.transport INFO       1874 _log Authentication (password) successful!
+2024-06-20 13:49:41,096 paramiko.transport DEBUG      1212 _log [chan 0] Max packet in: 32768 bytes
+2024-06-20 13:49:41,105 paramiko.transport DEBUG      1212 _log [chan 0] Max packet out: 4096 bytes
+2024-06-20 13:49:41,105 paramiko.transport DEBUG      1874 _log Secsh channel 0 opened.
+2024-06-20 13:49:41,119 paramiko.transport DEBUG      1212 _log [chan 0] Sesch channel 0 request ok
+2024-06-20 13:49:41,132 paramiko.transport DEBUG      1212 _log [chan 0] Sesch channel 0 request ok
+2024-06-20 13:49:41,133 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:41,234 netmiko DEBUG      113 wrapper_decorator write_channel: b'terminal width 511\n'
+2024-06-20 13:49:41,235 netmiko DEBUG      583 read_channel read_channel: R1>
+R1>
+2024-06-20 13:49:41,245 netmiko DEBUG      583 read_channel read_channel: terminal width 5
+2024-06-20 13:49:41,256 netmiko DEBUG      583 read_channel read_channel: 11
+R1>
+2024-06-20 13:49:41,256 netmiko DEBUG      660 read_until_pattern Pattern found: (terminal width 511) R1>
+R1>terminal width 511
+2024-06-20 13:49:41,257 netmiko DEBUG      1216 disable_paging In disable_paging
+2024-06-20 13:49:41,257 netmiko DEBUG      1217 disable_paging Command: terminal length 0
+
+2024-06-20 13:49:41,257 netmiko DEBUG      113 wrapper_decorator write_channel: b'terminal length 0\n'
+2024-06-20 13:49:41,258 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,268 netmiko DEBUG      583 read_channel read_channel: terminal length 
+2024-06-20 13:49:41,280 netmiko DEBUG      583 read_channel read_channel: 0
+R1>
+2024-06-20 13:49:41,280 netmiko DEBUG      660 read_until_pattern Pattern found: (terminal\ length\ 0) 
+R1>terminal length 0
+2024-06-20 13:49:41,280 netmiko DEBUG      1228 disable_paging 
+R1>terminal length 0
+2024-06-20 13:49:41,280 netmiko DEBUG      1229 disable_paging Exiting disable_paging
+2024-06-20 13:49:41,292 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,294 netmiko DEBUG      1387 clear_buffer Clear buffer detects data in the channel
+2024-06-20 13:49:41,315 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,316 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:41,316 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,328 netmiko DEBUG      583 read_channel read_channel: 
+R1>
+2024-06-20 13:49:41,328 netmiko DEBUG      660 read_until_pattern Pattern found: (\#|>) 
+R1>
+2024-06-20 13:49:41,339 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,340 netmiko DEBUG      1363 find_prompt [find_prompt()]: prompt is R1>
+2024-06-20 13:49:41,341 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:41,341 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,352 netmiko DEBUG      583 read_channel read_channel: 
+R1>
+2024-06-20 13:49:41,353 netmiko DEBUG      660 read_until_pattern Pattern found: (R1.*) 
+R1>
+2024-06-20 13:49:41,353 netmiko DEBUG      113 wrapper_decorator write_channel: b'enable\n'
+2024-06-20 13:49:41,354 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,366 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,377 netmiko DEBUG      583 read_channel read_channel: enable
+Password: 
+2024-06-20 13:49:41,378 netmiko DEBUG      660 read_until_pattern Pattern found: (enable) enable
+2024-06-20 13:49:41,378 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,379 netmiko DEBUG      660 read_until_pattern Pattern found: ((?:R1|ssword)) 
+Password
+2024-06-20 13:49:41,379 netmiko DEBUG      113 wrapper_decorator write_channel: b'********\n'
+2024-06-20 13:49:41,380 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,390 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:41,391 netmiko DEBUG      660 read_until_pattern Pattern found: (R1) : 
+R1
+2024-06-20 13:49:41,391 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:41,391 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,404 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:41,404 netmiko DEBUG      660 read_until_pattern Pattern found: (R1.*) #
+R1#
+2024-06-20 13:49:41,415 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,415 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:41,441 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:41,453 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,454 netmiko DEBUG      1363 find_prompt [find_prompt()]: prompt is R1#
+2024-06-20 13:49:41,454 netmiko DEBUG      113 wrapper_decorator write_channel: b'sh ip int br\n'
+2024-06-20 13:49:41,455 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,465 netmiko DEBUG      583 read_channel read_channel: sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+R1#
+2024-06-20 13:49:41,466 netmiko DEBUG      660 read_until_pattern Pattern found: (sh\ ip\ int\ br) sh ip int br
+2024-06-20 13:49:41,492 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,493 root DEBUG      34 send_show_netmiko 
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.139.1   YES NVRAM  up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+2024-06-20 13:49:41,493 root INFO       35 send_show_netmiko <=== Received:   192.168.139.1
+2024-06-20 13:49:41,494 netmiko DEBUG      113 wrapper_decorator write_channel: b'\n'
+2024-06-20 13:49:41,494 netmiko DEBUG      583 read_channel read_channel: 
+2024-06-20 13:49:41,505 netmiko DEBUG      583 read_channel read_channel: 
+R1#
+2024-06-20 13:49:41,507 netmiko DEBUG      660 read_until_pattern Pattern found: ([>#]) 
+R1#
+2024-06-20 13:49:41,508 netmiko DEBUG      113 wrapper_decorator write_channel: b'exit\n'

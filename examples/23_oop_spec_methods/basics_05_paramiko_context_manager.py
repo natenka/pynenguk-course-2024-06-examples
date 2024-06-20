@@ -51,11 +51,6 @@ class CiscoSSH:
     def close(self):
         self._ssh.close()
 
-    def __enter__(self):
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        self.close()
 
 
 if __name__ == "__main__":

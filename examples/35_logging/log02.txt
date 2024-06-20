@@ -1,0 +1,6 @@
+2024-06-20 12:48:12,321 DEBUG      root basics_02_basic_config_file <module> 10 message debug
+2024-06-20 12:48:12,322 INFO       root basics_02_basic_config_file <module> 11 message info
+2024-06-20 12:48:12,322 WARNING    root basics_02_basic_config_file <module> 12 message warning
+2024-06-20 12:48:12,322 DEBUG      root basics_02_basic_config_file func 16 message debug
+2024-06-20 12:48:12,322 INFO       root basics_02_basic_config_file func 17 message info
+2024-06-20 12:48:12,322 WARNING    root basics_02_basic_config_file func 18 message warning

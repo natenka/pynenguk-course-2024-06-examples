@@ -8,34 +8,31 @@ class IPAddress:
         self.ip = ip
         self.mask = mask
 
+    def __int__(self):
+        bits = ""
+        for octet in self.ip.split("."):
+            bits += f"{int(octet):08b}"
+        return int(bits, 2)
+
+    def __lt__(self, other):
+        if not isinstance(other, IPAddress):
+            raise TypeError(
+                f"'<' not supported between instances of "
+                f"'IPAddress' and '{type(other).__name__}'"
+            )
+        return (int(self), self.mask) < (int(other), other.mask)
+
+    def __len__(self):
+        return 32
+
     def __str__(self):
-        print("__str__")
         return f"{self.ip}/{self.mask}"
 
     def __repr__(self):
-        # print("__repr__")
         return f"IPAddress('{self.ip}', {self.mask})"
 
-    def __int__(self):
-        print(f"__int__ {self=}")
-        octets = [f"{int(octet):08b}" for octet in self.ip.split(".")]
-        bin_ip = "".join(octets)
-        return int(bin_ip, 2)
 
-    def __add__(self, integer):
-        print(f"__add__ {self=} {integer=}")
-        if not isinstance(integer, int):
-            raise TypeError(
-                f"unsupported operand type(s) for +: 'IPAddress' and "
-                f"'{type(integer).__name__}'"
-            )
-        new_ip_int = int(self) + integer
-        new_ip = str(ipaddress.ip_address(new_ip_int))
-        return IPAddress(new_ip, self.mask)
-
-
-
-ip1 = IPAddress("10.1.1.1", 25)
+ip1 = IPAddress("10.1.1.1", 23)
 ip2 = IPAddress("10.2.2.2", 25)
 ip3 = IPAddress("10.1.1.1", 25)
 ip4 = IPAddress("10.10.1.1", 25)
